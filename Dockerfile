@@ -4,3 +4,5 @@ Copy dovecot.conf /etc/dovecot/dovecot.conf
 Expose 24
 Expose 143
 Expose 110
+Expose 993
+Expose 995
