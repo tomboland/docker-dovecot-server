@@ -4,7 +4,6 @@ services:
   - docker
 
 before_install:
-  - docker pull tomboland/docker-dovecot-server
   - docker build -t tomboland/docker-dovecot-server .
   - docker run -d tomboland/docker-dovecot-server
   - docker ps -a
