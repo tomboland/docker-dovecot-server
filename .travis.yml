@@ -5,5 +5,7 @@ services:
 
 before_install:
   - docker build -t tomboland/docker-dovecot-server .
-  - docker run -d tomboland/docker-dovecot-server
-  - docker ps -a
+  - docker run -d --name dovecot-server tomboland/docker-dovecot-server
+
+script:
+  - docker ps | grep -q dovecot-server
